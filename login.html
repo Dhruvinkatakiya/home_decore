@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>login</title>
+    <link rel="stylesheet" href="./logsign.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+</head>
+<body>
+    
+    <form>
+        <h3>Login</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username" required pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" minlength="05" title="Username must contain only letters, numbers, underscores, hyphens or dots, and 5 characters long.">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Password must be at least 8 characters long, contain at least one letter and one number.">
+
+         <button><a href="./index.html">Log In</a></button>
+         
+       <center>
+         <br>
+          <div class="signup">
+            Don't have account?
+            <a href="./signup.html">Signup Now</a>
+         </div>
+       </center>
+      </form>
+</body>
+</html>

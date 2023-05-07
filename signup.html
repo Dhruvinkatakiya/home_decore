@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>login</title>
+    <link rel="stylesheet" href="./logsign.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+</head>
+<body>
+    
+    <form>
+        <h3>Signup</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username"  required pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" minlength="05" title="Username must contain only letters, numbers, underscores, hyphens or dots, and 5 characters long." >
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Password must be at least 8 characters long, contain at least one letter and one number.">
+
+        <label for="confirm password">Confirm Password</label>
+        <input type="password" placeholder=" Confirm Password" id="cpassword" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" minlength="06" title="Please enter confirm Password same as password">
+
+         <button><a href="./index.html"> Signup</a></button>
+         
+       <center>
+         <br>
+          <div class="signup">
+            You have account?
+            <a href="./login.html">Login Now</a>
+         </div>
+       </center>
+      </form>
+</body>
+</html>
